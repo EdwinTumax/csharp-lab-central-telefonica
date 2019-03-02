@@ -27,7 +27,10 @@ namespace CentralTelefonica.Entidades
             get { return franja;}
             set { franja = value;}
         }
-        
+        public LlamadaDepartamental(){}
+        public LlamadaDepartamental(string numeroOrigen, string numeroDestino, double duracion) =>
+            (base.NumeroOrigen, base.NumeroDestino,base.Duracion) 
+                = (numeroOrigen,numeroDestino,duracion);
         public override double CalcularPrecio(){
             double resultado = 0;
             if(this.Franja == 0){
