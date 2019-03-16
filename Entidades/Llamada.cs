@@ -29,5 +29,6 @@ namespace CentralTelefonica.Entidades
         public override string ToString(){
             return $" #Origen: {this.numeroOrigen} - #Destino: {this.numeroDestino} - Duracion: {this.duracion}";
         }
+        
     }
 }
